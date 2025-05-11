@@ -67,7 +67,7 @@ ecommerce_sql_project/
 
 ---
 
-## 📥 To Reproduce
+## To Reproduce
 
 1. Set up MySQL and run `ecommerceDB_setup.sql`
 2. Run `generate_data.py` to populate with data
