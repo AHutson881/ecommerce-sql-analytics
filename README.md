@@ -1,6 +1,6 @@
 # E-Commerce Analytics SQL + Python Project
 
-This project simulates a complete business analysis workflow for a fictional e-commerce company. Using Python and MySQL, I generated and explored a normalized relational dataset of customers, orders, products, and returns — structured to reflect real-world operations and user behavior. The project includes database creation, synthetic data generation, business insights through SQL, and structured data exports in both CSV and Excel formats.
+This project simulates a complete business analysis workflow for a fictional e-commerce company. Using Python and MySQL, I generated and explored a normalized relational dataset of customers, orders, products, and returns that was structured to reflect real-world operations and user behavior using synthetic data. The project includes database creation, synthetic data generation, business insights through SQL, and structured data exports in both CSV and Excel formats. A PowerBI aspect to this will also be available shortly on my GitPages portfolio here -> https://ahutson881.github.io/allisonh-portfolio/#
 
 ---
 
