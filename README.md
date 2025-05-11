@@ -1,10 +1,10 @@
-# 🛒 E-Commerce Analytics SQL + Python Project
+# E-Commerce Analytics SQL + Python Project
 
 This project simulates a complete business analysis workflow for a fictional e-commerce company. Using Python and MySQL, I generated and explored a normalized relational dataset of customers, orders, products, and returns — structured to reflect real-world operations and user behavior. The project includes database creation, synthetic data generation, business insights through SQL, and structured data exports in both CSV and Excel formats.
 
 ---
 
-## 🎯 Business Goal
+## Business Goal
 
 **How can this e-commerce company increase revenue while reducing product returns and improving customer retention?**
 
@@ -12,7 +12,7 @@ This project frames all analysis and reporting around answering this core questi
 
 ---
 
-## 🧱 Database Schema
+## Database Schema
 
 - **customers** — customer_id, first_name, last_name, email, signup_date
 - **products** — product_id, product_name, category, price
@@ -22,7 +22,7 @@ This project frames all analysis and reporting around answering this core questi
 
 ---
 
-## 🧪 Key Analytical Questions
+## Key Analytical Questions
 
 - What product categories generate the most revenue?
 - Which customers have the highest lifetime value?
@@ -32,7 +32,7 @@ This project frames all analysis and reporting around answering this core questi
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 ecommerce_sql_project/
@@ -56,7 +56,7 @@ ecommerce_sql_project/
 
 ---
 
-## 💡 Skills Highlighted
+## Skills Highlighted
 
 - Relational database schema design (MySQL)
 - Synthetic data generation with Python and Faker
@@ -64,17 +64,6 @@ ecommerce_sql_project/
 - Analysis of customer behavior and product performance
 - Data export automation (CSV and Excel)
 - Clean project documentation and structure
-
----
-
-## 📊 Suggested Next Step
-
-You can load the `ecommerce_database.xlsx` file into Power BI or Tableau to build dashboards for:
-
-- Revenue by category over time
-- Customer segmentation by spend
-- Product return rates and trends
-- Monthly order volume
 
 ---
 
@@ -87,7 +76,4 @@ You can load the `ecommerce_database.xlsx` file into Power BI or Tableau to buil
 5. Use SQL scripts in `SQL_Scripts/` to explore insights
 
 ---
-
-## 📌 Status
-
-✅ Complete and ready for GitHub, portfolio publication, or use as a template for similar SQL + Python analytics projects.
+# Let me know your thoughts or any questions!
