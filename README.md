@@ -1,4 +1,4 @@
-# E-Commerce Analytics SQL + Python Project
+# E-Commerce Analytics SQL + Python  + Power BI Project
 
 This project simulates a complete business analysis workflow for a fictional e-commerce company. Using Python and MySQL, I generated and explored a normalized relational dataset of customers, orders, products, and returns that was structured to reflect real-world operations and user behavior using synthetic data. The project includes database creation, synthetic data generation, business insights through SQL, and structured data exports in both CSV and Excel formats. A PowerBI aspect to this will also be available shortly on my GitPages portfolio here -> https://ahutson881.github.io/allisonh-portfolio/#
 
@@ -76,4 +76,129 @@ ecommerce_sql_project/
 5. Use SQL scripts in `SQL_Scripts/` to explore insights
 
 ---
-# Let me know your thoughts or any questions!
+## PowerBI Report Creation
+
+# E-Commerce SQL Analytics Project
+
+Using the simulated data from before to create an interactive dashboard using Power BI. (Shown on my portfolio pages statically because I do not have an actual PowerBI account currently.)
+
+# Objective
+
+**Analyze customer behavior, purchase trends, and return patterns** to identify high-value customers and product performance. Key metrics include:
+
+- Total Revenue
+- Return Rate
+- Average Order Value
+- Customer Lifetime Value (CLV)
+- Revenue by Category & Customer Tier
+
+---
+
+## ⚙️ Tools Used
+
+- **MySQL**: Database schema design and querying  
+- **Python (pandas, MySQL connector)**: Synthetic data generation and export  
+- **Power BI Desktop**: Interactive dashboard creation  
+- **Git & GitHub**: Version control and portfolio publication  
+
+---
+
+## 🛠️ Data Generation & Adjustments
+
+- **Synthetic data** generated via Python to simulate:
+  - Customers, orders, products, order items, and returns  
+- **Fixes Made:**
+  - Added realistic `signup_date` and `return_date` using `datetime` ranges  
+  - Ensured `Customer Lifetime Value` is calculated based on actual `total_amount` from `orders`  
+  - Product names were updated to be more natural-sounding  
+  - Derived tables were regenerated using corrected date values  
+
+### Derived Tables (Examples)
+
+- `total_revenue_by_category`
+- `customer_lifetime_value`
+- `monthly_revenue_trend`
+- `top_returned_products`
+- `return_rate_by_product`
+- `return_rate_by_category`
+- `top_customers_by_spend`
+
+---
+
+## 📊 Power BI Dashboard Design
+
+### Dashboard Pages
+
+#### 1. **Main Dashboard**
+
+Includes:
+
+- KPI Cards for:
+  - Total Revenue
+  - Return Rate (%)
+  - Average Order Value
+- Trend Visuals:
+  - Monthly Revenue
+  - Monthly Return Count
+- Segmentations:
+  - CLV by Customer Name
+  - Revenue and Customer Count by Revenue Tier
+  - Revenue by Product Category
+
+#### 2. **KPI & Trend Details**
+
+Drilldown into:
+
+- Revenue trends
+- Product category breakdowns
+- Customer purchase behavior
+
+### Custom Measures Used (DAX):
+
+DAX
+Customer Lifetime Value = 
+CALCULATE(
+    SUM(orders[total_amount]),
+    FILTER(orders, orders[customer_id] = MAX(customers[customer_id]))
+)
+
+Total Revenue = 
+SUMX(order_items, order_items[quantity] * order_items[item_price])
+
+Return Rate (%) = 
+DIVIDE(COUNT(returns[return_id]), COUNT(order_items[order_item_id]))
+
+Average Order Value = 
+AVERAGEX(orders, orders[total_amount])
+Revenue Tier =
+SWITCH(
+    TRUE(),
+    [Customer Lifetime Value] >= 1000, "High Value",
+    [Customer Lifetime Value] >= 500, "Mid Value",
+    [Customer Lifetime Value] >= 0, "Low Value",
+    "Unknown"
+)'''
+
+## How to Reproduce
+Clone this repo
+
+Run generate_data.py to create and populate your MySQL database
+
+Use export_data.py or db_export_full.py to export data to CSV or Excel
+
+Open ecommerce_database.xlsx in Power BI Desktop
+
+Load tables, clean data types, define relationships, and build visuals
+
+# Sample Insights
+40% of customers fall into the High Value Tier
+
+Electronics generates the highest category revenue
+
+CLV distributions are skewed toward 2–3 power users
+
+Return rate hovers near 39%, driven mostly by "Wrong item delivered"
+
+# Author
+Allison Hutson
+Customer Insights & Product Research Strategist
