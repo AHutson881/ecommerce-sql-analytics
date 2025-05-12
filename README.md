@@ -94,7 +94,7 @@ Using the simulated data from before to create an interactive dashboard using Po
 
 ---
 
-## ⚙️ Tools Used
+## Tools Used
 
 - **MySQL**: Database schema design and querying  
 - **Python (pandas, MySQL connector)**: Synthetic data generation and export  
