@@ -103,7 +103,7 @@ Using the simulated data from before to create an interactive dashboard using Po
 
 ---
 
-## 🛠️ Data Generation & Adjustments
+## Data Generation & Adjustments
 
 - **Synthetic data** generated via Python to simulate:
   - Customers, orders, products, order items, and returns  
@@ -125,7 +125,7 @@ Using the simulated data from before to create an interactive dashboard using Po
 
 ---
 
-## 📊 Power BI Dashboard Design
+## Power BI Dashboard Design
 
 ### Dashboard Pages
 
