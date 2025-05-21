@@ -1,12 +1,12 @@
 # E-Commerce Analytics Project: SQL, Python, and Power BI
 
-This project walks through a full analytics workflow for a fictional e-commerce company from database creation and data generation to SQL analysis and Power BI report design. The goal was to uncover patterns in customer behavior, purchase trends, and product returns, all using simulated data that mimics real-world operations.
+This project walks through a full analytics workflow for a fictional e-commerce company from database creation and data generation to SQL (MySQL) analysis and Power BI report design. The goal was to uncover patterns in customer behavior, purchase trends, and product returns, all using simulated data that mimics real-world operations.
 
 ## Business Goal
 
-**How can this e-commerce company increase revenue, reduce product returns, and improve customer retention?**
+**How can this (fake) e-commerce company increase revenue, reduce product returns, and improve customer retention?**
 
-Everything in this project was built to help answer that question.
+Everything in this project was built to help me answer that question.
 
 ## Project Overview
 
